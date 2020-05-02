@@ -3,9 +3,12 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import {Grid} from './styles'
+
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Differentials from "../components/Differentials"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,11 +34,12 @@ const IndexPage = () => {
 
 return(
   <Layout>
-    <div>
+    <Grid>
    {data.allFile.edges.map(({node})=>(
      <Img style={{marginTop:20}} fluid={node.childImageSharp.fluid} />
    ))}
-   </div>
+   </Grid>
+   <Differentials />
   </Layout>
 )
 
