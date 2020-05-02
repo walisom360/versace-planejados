@@ -1,36 +1,27 @@
 import React from 'react';
 
-import { Container,Card } from './styles';
-import {FaUser} from 'react-icons/fa'
+import { Container,Card,Title } from './styles';
+import {FaUser,FaStar,FaTruckPickup} from 'react-icons/fa'
 
 
 export default function Differentials() {
   return (
+     <> 
+    <Title>Diferenciais da Verssace Planejados</Title>
    <Container>
-    <Card>
-    <FaUser size={28} />
+   
 
-    <div>
-    <span>Atendimento</span>
-    <span>Personalizado</span>
-    </div>
-    </Card>
+
+    
     <Card>
-    <FaUser size={28} />
+    <FaTruckPickup color="green" size={58} />
 
 <div>
-<span>Atendimento</span>
-<span>Personalizado</span>
+<span>Prazos</span>
+<span>Diferenciados</span>
 </div>
     </Card>
-     <Card>
-     <FaUser size={28} />
-
-<div>
-<span>Atendimento</span>
-<span>Personalizado</span>
-</div>
-     </Card>
+   
      <Card>
      <FaUser size={28} />
 
@@ -40,13 +31,15 @@ export default function Differentials() {
 </div>
      </Card>
       <Card>
-      <FaUser size={28} />
+      <FaStar color="#ffa100" size={48} />
 
 <div>
-<span>Atendimento</span>
-<span>Personalizado</span>
+<span>10 anos de</span>
+<span>Experiência</span>
 </div>
       </Card>
       </Container>   
+
+      </> 
   );
 }

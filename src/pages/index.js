@@ -5,13 +5,18 @@ import Img from "gatsby-image"
 
 import {Grid} from './styles'
 
+
+import Header from "../components/header"
+
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Differentials from "../components/Differentials"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
+ 
+  
+    const data = useStaticQuery(graphql`
   query MyQuery {
     allFile(filter: {extension: {regex: "/(jpg)/"}, relativeDirectory: {eq: "forniture"}, relativePath: {}}) {
       edges {
@@ -32,16 +37,20 @@ const IndexPage = () => {
   }
   `)
 
+  
+
 return(
-  <Layout>
+  <>
+       <Header  siteTitle={"Verssace Planejados"} />
+    <div style={{padding:60}}>
     <Grid>
    {data.allFile.edges.map(({node})=>(
      <Img style={{marginTop:20}} fluid={node.childImageSharp.fluid} />
    ))}
    </Grid>
    <Differentials />
-  </Layout>
+   </div>
+</>
 )
-
 }
 export default IndexPage
