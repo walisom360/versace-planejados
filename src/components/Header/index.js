@@ -1,12 +1,14 @@
 import React, { useState } from "react"
-import "./styles.css"
+
 
 import { Link } from "gatsby"
+import { Container } from "./styles"
 
 
 
 const Nav = () => {
   return (
+   <Container>
     <nav id="navbar">
       <Link style={{ textDecoration: "none" }} to="/home/">
         <h1 class="logo">
@@ -60,6 +62,7 @@ const Nav = () => {
      
       </ul>
     </nav>
+    </Container>
   )
 }
 

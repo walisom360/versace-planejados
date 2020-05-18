@@ -30,6 +30,7 @@ export const Card = styled.div`
   height:140px;
   padding:12px;
   border-radius:6px;
+  margin:10px;
 
   background-color:#e32f5d;
 
