@@ -13,6 +13,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Differentials from "../components/Differentials"
 
+import BackGroundNavigation from '../components/BackGroundNavigation'
+
 const IndexPage = () => {
  
   
@@ -41,7 +43,8 @@ const IndexPage = () => {
 
 return(
   <>
-       <Header  siteTitle={"Verssace Planejados"} />
+       <Header  />
+       <BackGroundNavigation  />
     <div style={{padding:60}}>
     <Grid>
    {data.allFile.edges.map(({node})=>(
