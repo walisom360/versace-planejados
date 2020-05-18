@@ -27,6 +27,11 @@ export const Card = styled.div`
   flex-direction:column;
   align-items:center;
   justify-content:space-between;
+  height:140px;
+  padding:12px;
+  border-radius:6px;
+
+  background-color:#e32f5d;
 
   @media (max-width:808px) {
     > div{
@@ -44,11 +49,12 @@ export const Card = styled.div`
       span{
           display:block;
           text-align:center;
+          color:#fff;
       }
   }
 
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  height:100px;
+  /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+
   width:250px;
   box-shadow: 0px 3px 6px #00000029;
 `;

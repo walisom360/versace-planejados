@@ -14,7 +14,7 @@ export default function Differentials() {
 
     
     <Card>
-    <AiOutlineCar  size={58} />
+    <AiOutlineCar color="#fff" size={58} />
 
 <div>
 <span>Prazos</span>
@@ -23,7 +23,7 @@ export default function Differentials() {
     </Card>
    
      <Card>
-     <AiOutlineUser size={48} />
+     <AiOutlineUser color="#fff"  size={48} />
 
 <div>
 <span>Atendimento</span>
@@ -33,7 +33,7 @@ export default function Differentials() {
 
       
      <Card>
-     <AiOutlineSetting size={48} />
+     <AiOutlineSetting color="#fff"  size={48} />
 
 <div>
 <span>Fabrica Propria</span>
@@ -41,7 +41,7 @@ export default function Differentials() {
 </div>
      </Card>
       <Card>
-      <AiOutlineStar  size={48} />
+      <AiOutlineStar color="#fff"   size={48} />
 
 <div>
 <span>10 anos de</span>
