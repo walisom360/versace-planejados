@@ -43,7 +43,7 @@ const IndexPage = () => {
 
 return(
   <>
-       <Header  />
+       {/* <Header  /> */}
        <BackGroundNavigation  />
     <div style={{padding:60}}>
     <Grid>
