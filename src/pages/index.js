@@ -6,8 +6,6 @@ import Img from "gatsby-image"
 import {Grid} from './styles'
 
 
-import Header from "../components/header"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
