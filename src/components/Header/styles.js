@@ -64,7 +64,7 @@ export const Container = styled.div`
 /* scroll main total */
 
 /* Smartphone views */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -83,7 +83,7 @@ export const Container = styled.div`
   #navbar ul {
     padding: 0.5rem;
   }
-}
+} */
 `;
 
 
